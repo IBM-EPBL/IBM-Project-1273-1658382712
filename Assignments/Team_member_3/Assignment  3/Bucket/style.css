@@ -1,0 +1,92 @@
+.pokemon {
+    width: 500px;
+    height: 500px;
+    /* center content using flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overlay */
+    box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+    /* hover out transition */
+    transition: box-shadow 1s;
+    float: left;
+    margin: 10px;
+  }
+  
+  
+  /* pokemone names */
+  
+  .pokemon::after {
+    width: 80%;
+    height: 80%;
+    display: block;
+    white-space: pre;
+    font: 15pt 'sigmar one';
+    color: white;
+    border: 2px solid;
+    text-align: center;
+    /* center content using flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* hover out transition */
+    transition: opacity 1s .5s;
+  }
+  
+  
+  /* reveal pokemone picture on hover */
+  
+  .pokemon:hover {
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
+  }
+  
+  
+  /* hide pokemone name on hover */
+  
+  .pokemon:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  
+  #bulbasaur {
+    background-image: url(https://collections.s3.jp-tok.cloud-object-storage.appdomain.cloud/flowers-6574079__340.webp);
+    color: rgba(71, 121, 94, .9);
+  }
+  
+  #bulbasaur::after {
+    content: 'Bulbasaur';
+  }
+  
+  #charmander {
+    background-image: url(https://collections.s3.jp-tok.cloud-object-storage.appdomain.cloud/pasqueflower-3066824__340.webp);
+    color: rgba(221, 86, 63, .9);
+  }
+  
+  #charmander::after {
+    content: 'Charmander'
+  }
+  
+  #squirtle {
+    background-image: url(https://collections.s3.jp-tok.cloud-object-storage.appdomain.cloud/forest-3622519__340.jpg);
+    color: rgba(65, 102, 114, .9);
+  }
+  
+  #squirtle::after {
+    content: 'Squirtle'
+  }
+  
+  #pikachu {
+    background-image: url(https://collections.s3.jp-tok.cloud-object-storage.appdomain.cloud/fog-4529617__340.jpg);
+    color: rgba(179, 152, 98, .9);
+  }
+  
+  #pikachu::after {
+    content: 'Pikachu'
+  }
+  
+  #wrapper {
+    width: 500px;
+    height: 500px;
+    margin:  auto;
+  }
