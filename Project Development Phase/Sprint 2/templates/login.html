@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">             
+
+</head>
+
+<body>
+
+	<body>
+		<div class="main">
+		  <h2 class="sign" align="center">Sign in</h2>
+    <form action="{{ url_for('loginpage')}}"method="post">
+    	<input type="text" class="un" name="username" placeholder="Enter UserName" required="required" style="color:black" />
+        <input type="password" class="pass" name="password" placeholder="Enter Password" required="required" style="color:black" />
+        <button type="submit"class="submit">Login</button> 
+		<p class="pass" align="center" style="color: rgb(26, 25, 25) ;">Don't have any account?<a href="{{url_for('register')}}" style="color:blue ;">Create account</p>
+    </form>
+<br><br>
+<div style="color:black">
+ {{ msg }}</div>
+ </div>
+
+</body>
+</html>
