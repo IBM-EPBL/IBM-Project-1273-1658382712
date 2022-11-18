@@ -12,7 +12,7 @@ IBM Cloud, HTML, Javascript, IBM Cloud Object Storage, Python-Flask, Kubernetes,
 
 ## 🤹‍♀️ TEAM MEMBERS
 
-  - <a href="https://github.com/Mohanraj123kpr">Mohanraj S</a>
-  - <a href="https://github.com/kalaiyarasn2002454">Kalaiyarasan PS</a>
-  - <a href="https://github.com/Kabilanp4">Kabilan P</a>
-  - <a href="https://github.com/B3g1n3r">Eswaran R</a>
+  - <a href="https://github.com/Mohanraj123kpr">Mohanraj S(Team Lead)</a>
+  - <a href="https://github.com/kalaiyarasn2002454">Kalaiyarasan PS(Team Member 1)</a>
+  - <a href="https://github.com/Kabilanp4">Kabilan P(Team Member 2)</a>
+  - <a href="https://github.com/B3g1n3r">Eswaran R(Team Member 3)</a>
