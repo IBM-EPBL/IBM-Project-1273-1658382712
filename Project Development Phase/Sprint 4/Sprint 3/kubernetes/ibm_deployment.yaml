@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: plasma-donor
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: plasma-donor
+  template:
+    metadata:
+      labels:
+        app: plasma-donor
+
+    spec:
+      containers:
+        - name: plasma-donor-container
+          image: jp.icr.io/plasma-donor/application@sha256:3d2a01c714c09aa5dfe74edaab5f759bde864ce47107c916797b75a7ec1cbbf3
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
