@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: plasma-donation
+
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: plasma-donation
+  template:
+    metadata:
+      labels:
+        app: plasma-donation
+
+    spec:
+      containers:
+        - name: plasma-donation-container
+          image: plasma-donation-testing
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
